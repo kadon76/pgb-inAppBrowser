@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <widget xmlns="http://www.w3.org/ns/widgets" 
-	xmlns:gap="http://phonegap.com/ns/1.0" 
-	id="com.inappbrowser.pgbtest" 
-	version="1.0.2">
+		xmlns:gap="http://phonegap.com/ns/1.0"
+		id="com.inappbrowser.pgbtest"
+		version="1.0.2">
 	
-    <name>
-        inAppBrowser Test
-    </name>
-        <description>
-        An example of inAppBrowser Plugin. 
-    </description>
+	<name>
+		inAppBrowser Test
+	</name>
+	<description>
+		An example of inAppBrowser Plugin.
+	</description>
 
-    <author href="https://sub.example.com" email="someone@email.com">
-        Yourname
-    </author>
+	<author href="https://sub.example.com" email="someone@email.com">
+		Yourname
+	</author>
 
 	<!-- @note gap:platforms not working in PGB! -->
 	<gap:platform name="ios" />
 	<gap:platform name="android" minVersion="2.1"/>
 
-	<!-- don't need all features -->
+	<!-- don't need all features, but it won't work anyway... -->
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
@@ -39,5 +39,5 @@
 	<preference name="permissions" value="none"/>
 
 	<access origin="*" />
- 
+
 </widget>
