@@ -2,7 +2,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:gap="http://phonegap.com/ns/1.0" 
 	id="com.inappbrowser.pgbtest" 
-	version="1.0.1">
+	version="1.0.2">
 	
     <name>
         inAppBrowser Test
@@ -20,7 +20,6 @@
 	<gap:platform name="android" minVersion="2.1"/>
 
 	<!-- don't need all features -->
-	<!--
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
@@ -30,13 +29,6 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	-->
-	<!-- InAppBrowser -->
-	<preference name="EnableViewportScale" value="true" />
-	<feature name="InAppBrowser">
-		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-		<param name="ios-package" value="CDVInAppBrowser" />
-	</feature>
 	
 	<!-- PG version -->
 	<preference name="phonegap-version" value="3.0.0" />
