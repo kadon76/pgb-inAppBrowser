@@ -14,10 +14,10 @@
     <author href="https://sub.example.com" email="someone@email.com">
         Yourname
     </author>
-    <gap:platforms>
-		<gap:platform name="ios" />
-        <gap:platform name="android" minVersion="2.1"/>
-    </gap:platforms>
+
+	<!-- @note gap:platforms not working in PGB! -->
+	<gap:platform name="ios" />
+	<gap:platform name="android" minVersion="2.1"/>
 
 	<!-- don't need all features -->
 	<!--
