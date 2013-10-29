@@ -21,7 +21,8 @@
         <gap:platform name="blackberry" project="widgets"/>
     </gap:platforms>
 
-		
+	<!-- don't need all features -->
+	<!--
 	<feature name="http://api.phonegap.com/1.0/device"/>
 	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
@@ -31,7 +32,26 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
+	-->
+	<!-- InAppBrowser -->
+	<preference name="EnableViewportScale" value="true" />
+	<feature name="InAppBrowser">
+		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+		<param name="ios-package" value="CDVInAppBrowser" />
+	</feature>
 	
+	<!-- Mobile OS -->
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+
+	<!-- PG version -->
+	<preference name="phonegap-version" value="3.0.0" />
+	<!--
+		We don't really need specific permissions,
+		but PGB will add some.
+	-->
+	<preference name="permissions" value="none"/>
+
 	<access origin="*" />
  
 </widget>
