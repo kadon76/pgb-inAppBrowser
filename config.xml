@@ -2,7 +2,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" 
 		xmlns:gap="http://phonegap.com/ns/1.0"
 		id="com.inappbrowser.pgbtest"
-		version="1.0.2">
+		version="1.0.3">
 	
 	<name>
 		inAppBrowser Test
@@ -29,7 +29,11 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	
+
+<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
+
 	<!-- PG version -->
 	<preference name="phonegap-version" value="3.0.0" />
 	<!--
