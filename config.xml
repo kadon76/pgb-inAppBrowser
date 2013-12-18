@@ -19,23 +19,10 @@
 	<gap:platform name="ios" />
 	<gap:platform name="android" minVersion="2.1"/>
 
-	<!-- don't need all features, but it won't work anyway... -->
-	<feature name="http://api.phonegap.com/1.0/device"/>
-	<feature name="http://api.phonegap.com/1.0/battery"/>
-	<feature name="http://api.phonegap.com/1.0/camera"/>
-	<feature name="http://api.phonegap.com/1.0/contacts"/>
-	<feature name="http://api.phonegap.com/1.0/file"/>
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<feature name="http://api.phonegap.com/1.0/media"/>
-	<feature name="http://api.phonegap.com/1.0/network"/>
-	<feature name="http://api.phonegap.com/1.0/notification"/>
-
-<feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-</feature>
+	<gap:plugin name="InAppBrowser" value="org.apache.cordova.inappbrowser.InAppBrowser" />
 
 	<!-- PG version -->
-	<preference name="phonegap-version" value="3.0.0" />
+	<preference name="phonegap-version" value="3.1.0" />
 	<!--
 		We don't really need specific permissions,
 		but PGB will add some.
