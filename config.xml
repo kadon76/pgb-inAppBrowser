@@ -21,12 +21,6 @@
 
 	<gap:plugin name="org.apache.cordova.core.inappbrowser" />
 
-	<!-- PG version -->
-	<preference name="phonegap-version" value="3.3.0" />
-	<!--
-		We don't really need specific permissions,
-		but PGB will add some.
-	-->
 	<preference name="permissions" value="none"/>
 
 	<access origin="*" />
