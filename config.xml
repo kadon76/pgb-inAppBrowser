@@ -19,10 +19,10 @@
 	<gap:platform name="ios" />
 	<gap:platform name="android" minVersion="2.1"/>
 
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.core.inappbrowser" />
 
 	<!-- PG version -->
-	<preference name="phonegap-version" value="3.1.0" />
+	<preference name="phonegap-version" value="3.3.0" />
 	<!--
 		We don't really need specific permissions,
 		but PGB will add some.
